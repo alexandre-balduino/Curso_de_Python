@@ -6,6 +6,7 @@ computador jogar Jokenpô com você.
 '''
 
 from random import randint
+from time import sleep
 
 comp = randint(1,3)
 user = int(input('''
@@ -14,6 +15,12 @@ user = int(input('''
 [ 3 ] Tesoura
 Escolha uma opção: 
 '''))
+print("JO")
+sleep(0.75)
+print("KEN")
+sleep(0.75)
+print("PÔ")
+sleep(0.75)
 if user == comp:
     print("Empate")
 elif user == 1 and comp == 2:
