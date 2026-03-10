@@ -17,25 +17,38 @@ from rich import print
 from rich.panel import Panel
 
 class Churrasco:
+    consumo: float = 0.400
+    preco_kg: float = 82.40
+        
     def __init__(self, titulo, pessoas):
         self.titulo = titulo
         self.pessoas = pessoas
-        self.consumo = 0.4
-        self.preco_carne = 82.4
+    
+    
+    def __str__(self):
+        return f"Esse é {self.titulo} com {self.pessoas} pessoas participando."
+    
+    
+    def calcular_quant_carne(self) -> float:
+        return self.pessoas * Churrasco.consumo # ou __class__.consumo
+    
+    
+    def calcular_preco_total(self) -> float:
+        return self.calcular_quant_carne() * __class__.preco_kg # ou Churrasco.preco
+    
+    
+    def calcular_preco_individual(self) -> float:
+        return self.calcular_preco_total() / self.pessoas
         
     
     def analisar(self):
-        quantos_kg = self.consumo * self.pessoas
-        valor_total = quantos_kg * self.preco_carne
-        valor_pessoa = valor_total / self.pessoas
+        conteudo = f"Analisando [blue]{self.titulo}[/] com [green]{self.pessoas} convidados[/] \n"
+        conteudo += f"Cada participante comerá {Churrasco.consumo}kg e cada Kg custa R${Churrasco.preco_kg:.2f} \n"
+        conteudo += f"Recomendo comprar {self.calcular_quant_carne()}kg de carne \n"
+        conteudo += f"O custo total será de R${self.calcular_preco_total():.2f} \n"
+        conteudo += f"E cada pessoa pagará R${self.calcular_preco_individual():.2f} para participar."
         analise = Panel(
-            f'''
-Analisando {self.titulo} com {self.pessoas} convidados
-Cada participante comerá {self.consumo}kg e cada Kg custa R${self.preco_carne}
-Recomendo comprar {quantos_kg:.2f}kg de carne
-O custo total será de R${valor_total:.2f}
-E cada pessoa pagará R${valor_pessoa:.2f} para participar.
-            ''', 
+            conteudo, 
             title=self.titulo
         )
         print(analise)
