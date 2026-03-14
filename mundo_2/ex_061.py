@@ -10,7 +10,8 @@ progressão usando a estrutura while.
 termo = int(input("Digite o termo: "))
 razao = int(input("Digite a razão: "))
 cont = termo
+fim = termo + razao * 10
 
-while cont < (termo + (razao * 10)):
+while cont < fim:
     print(cont)
     cont += razao
