@@ -19,7 +19,7 @@ def main():
             volume = f"VOLUME = [[blue]{barra_vol}[/]{espaco_vol}]"
             visor = f"{canal}\n{volume}"
             tv = Panel(visor, title="[ TV ]")
-        print(tv)
+            print(tv)
         opcao = input(f"[ @ ] ON/OFF \n<CH{controle.canal}> \n-VOL{controle.volume}+\n").strip()
         match opcao:
             case "@":
