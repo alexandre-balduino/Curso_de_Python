@@ -15,12 +15,12 @@ print(f"Você digitou os números {numeros}")
 maior = max(numeros)
 menor = min(numeros)
 print(f"O maior número digitado foi {max(numeros)} nas posições ", end="")
-for p, n in enumerate(numeros):
-    if n == maior:
-        print(f"{p}... ", end="")
+for pos, num in enumerate(numeros):
+    if num == maior:
+        print(f"{pos}... ", end="")
 print()
 print(f"E o menor número digitado foi {min(numeros)} nas posições ", end="")
-for p, n in enumerate(numeros):
-    if n == menor:
-        print(f"{p}... ", end="")
+for pos, num in enumerate(numeros):
+    if num == menor:
+        print(f"{pos}... ", end="")
 print()
