@@ -40,7 +40,7 @@ while True:
         break
 
 print()
-print(f"Foram cadastradas {quant} pessoas: {lista}")
+print(f"Foram cadastradas {quant} pessoas: {lista,}")
 print("As pessoas mais pesadas foram: ",end="")
 for pessoa in lista:
     if pessoa[1] == maior_peso:
