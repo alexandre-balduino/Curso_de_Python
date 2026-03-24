@@ -17,6 +17,6 @@ for lista in range(3):
 print("A matriz é:")
 for lista in matriz:
     for i, num in enumerate(lista):
-        print(f"[ {num} ] ", end="")
+        print(f"[{num:^3}]  ", end="")
         if i == 2:
             print()
