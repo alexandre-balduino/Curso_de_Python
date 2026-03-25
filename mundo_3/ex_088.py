@@ -20,4 +20,5 @@ for j in range(quant):
     palpite.append(jogo)
 
 for i, j in enumerate(palpite):
+    j.sort()
     print(f"{i + 1}ª aposta: {j}")
