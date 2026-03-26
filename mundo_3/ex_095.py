@@ -43,8 +43,8 @@ while True:
         break
 
 print(f"{'ID':>3} | {'NOME':<12}| {'GOLS':<5}| {'GOLS POR PARTIDA'}")
-for i, jogador in enumerate(jogadores):
-    print(f'{i:>3} | ', end='')
+for k, jogador in enumerate(jogadores):
+    print(f'{k:>3} | ', end='')
     for i, dado in enumerate(jogador.values()):
         if i == 0:
             print(f"{dado:<12}| ", end="")
@@ -57,11 +57,11 @@ while True:
     opcao = int(input("Digite o ID do jogador para ver mais informações ou 999 para parar: "))
     if opcao == 999:
         break
-    elif opcao >= len(jogadores):
+    elif 0 < opcao >= len(jogadores):
         print(f"Erro! Não existe jogador com o codigo {opcao}")
     else:
         print(f"Infornações sobre o jogador {jogadores[opcao]['nome']}")
         print(f"{jogadores[opcao]['nome']} jogou {len(jogadores[opcao]['gols_por_partida'])} partidas")
         for i, g in enumerate(jogadores[opcao]["gols_por_partida"]):
             print(f"- No jogo {i+1} fez {g} gols.")
-        print(f"Um total de {jogadores[opcao]["total_de_gols"]} gols")
+        print(f"Um total de {jogadores[opcao]['total_de_gols']} gols")
