@@ -24,7 +24,7 @@ def ficha(nome="", gols=0):
 
 
 ficha(
-    input("Nome do jogador: "),
+    input("Nome do jogador: ").title(),
     input("Número de gols: ")
 )
-ficha("Julio", 4)
+ficha("Alexandre", 4)
