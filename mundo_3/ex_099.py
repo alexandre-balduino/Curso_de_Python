@@ -13,11 +13,11 @@ def maior(*args):
     if len(args) == 0:
         print("Você não digitou nenhum número \nNão existe valor maior.")
     else:
-        maior = args[0]
+        maior_valor = args[0]
         for num in args:
-            if num > maior:
-                maior = num
-        print(f"Você digitou {len(args)} números \nO maior valor digitado foi {maior}")
+            if num > maior_valor:
+                maior_valor = num
+        print(f"Você digitou {len(args)} números \nO maior valor digitado foi {maior_valor}")
 
 
 maior(4, 6, 2)
