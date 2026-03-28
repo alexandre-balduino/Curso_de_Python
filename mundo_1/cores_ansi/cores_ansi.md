@@ -46,6 +46,7 @@ print("\033[1;31;43mTexto estilizado\033[m")
 43 → fundo amarelo
 
 📍 Posicionar texto na tela
+
 Sintaxe
 ```
 \033[LINHA;COLUNAH
@@ -93,11 +94,12 @@ direita n colunas
 \033[nD
 ```
 esquerda n colunas
+
 💾 Salvar/restaurar cursor
 ```
 \033[s   # salvar posição
 \033[u   # restaurar posição
-``|
+```
 👀 Mostrar / esconder cursor
 ```
 \033[?25l   # esconder cursor
