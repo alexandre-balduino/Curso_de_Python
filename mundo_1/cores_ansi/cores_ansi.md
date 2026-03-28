@@ -76,7 +76,9 @@ print("\033[2J")
 \033[K
 ```
 🧭 Movimentação do cursor
+
 Código
+
 Ação
 ```
 \033[nA
@@ -136,15 +138,27 @@ Sempre use:
 \033[m
 ```
 para resetar o terminal
+
 🧠 Resumo
+
 Com ANSI você controla:
+
 🎨 Cores
+
 📍 Posição
+
 🧭 Movimento
+
 💅 Estilo
+
 ⚙️ Comportamento do terminal
+
 🔥 Ideal para:
+
 Menus CLI
+
 Dashboards
+
 Sistemas interativos
+
 Projetos estilo terminal
