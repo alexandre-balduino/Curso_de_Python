@@ -7,8 +7,8 @@ def metade(num):
 
 def aumentar(num, taxa):
     porcent = num * taxa / 100
-    return f"{porcent + num:.2f}"
+    return f"{num + porcent:.2f}"
 
 def diminuir(num, taxa):
     porcent = num * taxa / 100
-    return f"{porcent - num:.2f}"
+    return f"{num - porcent:.2f}"
