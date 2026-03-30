@@ -1,12 +1,19 @@
 
-def dobrar(num):
-    return f"R${num * 2:.2f}"
+def aumentar(preco=0, taxa=0, formato=False):
+    res = preco + (preco * taxa / 100)
+    return moeda(res) if formato else res
 
-def metade(num):
-    return f"R${num / 2:.2f}"
 
-def aumentar(num, taxa):
-    return f"R${num + (num * taxa / 100):.2f}"
+def diminuir(preco=0, taxa=0, formato=False):
+    res = preco - (preco * taxa / 100)
+    return moeda(res) if formato else res
 
-def diminuir(num, taxa):
-    return f"R${num - (num * taxa / 100):.2f}"
+
+def dobrar(preco=0, formato=False):
+    res = preco * 2
+    return moeda(res) if formato else res
+
+
+def metade(preco=0, formato=False):
+    res = preco / 2
+    return moeda(res) if formato else res

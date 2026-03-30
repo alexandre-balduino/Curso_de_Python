@@ -1,4 +1,7 @@
 
+__all__ = ['aumentar', 'diminuir', 'dobrar', 'metade', 'moeda', 'resumo']
+
+
 def aumentar(preco=0, taxa=0, formato=False):
     res = preco + (preco * taxa / 100)
     return moeda(res) if formato else res

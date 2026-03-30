@@ -1,30 +1,35 @@
 
-def dobrar(num=0, formato=False):
-    res = num * 2
-    return res if not formato else moeda(res)
+def aumentar(preco=0, taxa=0, formato=False):
+    res = preco + (preco * taxa / 100)
+    return moeda(res) if formato else res
 
-def metade(num=0, formato=False):
-    res = num / 2
-    return res if not formato else moeda(res)
 
-def aumentar(num=0, taxa=0, formato=False):
-    res = num + (num * taxa / 100)
-    return res if not formato else moeda(res)
+def diminuir(preco=0, taxa=0, formato=False):
+    res = preco - (preco * taxa / 100)
+    return moeda(res) if formato else res
 
-def diminuir(num=0, taxa=0, formato=False):
-    res = num - (num * taxa / 100)
-    return res if not formato else moeda(res)
 
-def moeda(num=0):
-    return f"R${num:.2f}"
+def dobrar(preco=0, formato=False):
+    res = preco * 2
+    return moeda(res) if formato else res
 
-def resumo(num=0, taxa_aum=0, taxa_red=0):
-    print('-' * 32)
-    print('RESUMO DO VALOR'.center(32))
-    print('-' * 32)
-    print(f'Preço analisado: \t{moeda(num)}')
-    print(f'Dobro do preço: \t{dobrar(num, True)}')
-    print(f'Metade do preço: \t{metade(num, True)}')
-    print(f'{taxa_aum}% de aumento: \t{aumentar(num, taxa_aum, True)}')
-    print(f'{taxa_red}% de redução: \t{diminuir(num, taxa_red, True)}')
-    print('-' * 32)
+
+def metade(preco=0, formato=False):
+    res = preco / 2
+    return moeda(res) if formato else res
+
+
+def moeda(preco=0, simbolo='R$'):
+    return f'{simbolo}{preco:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')
+
+
+def resumo(preco=0, taxa_aum=0, taxa_red=0):
+    print('-' * 30)
+    print('RESUMO DO VALOR'.center(30))
+    print('-' * 30)
+    print(f'Preço analisado: {moeda(preco):>10}')
+    print(f'Dobro do preço: {dobrar(preco, True):>10}')
+    print(f'Metade do preço: {metade(preco, True):>10}')
+    print(f'{taxa_aum}% de aumento: {aumentar(preco, taxa_aum, True):>10}')
+    print(f'{taxa_red}% de redução: {diminuir(preco, taxa_red, True):>10}')
+    print('-' * 30)
