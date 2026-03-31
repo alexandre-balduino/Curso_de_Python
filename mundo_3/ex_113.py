@@ -40,7 +40,6 @@ def leiaFloat(msg="Digite um número: "):
             return num
 
 
-num1 = leiaInt()
-num2 = leiaFloat()
-print(num1)
-print(num2)
+num_int = leiaInt()
+num_real = leiaFloat()
+print(f"O número inteiro foi {num_int} e o real foi {num_real}")
