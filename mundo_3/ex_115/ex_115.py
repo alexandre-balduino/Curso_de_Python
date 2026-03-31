@@ -12,3 +12,8 @@ O sistema deve armazenar os dados
 em um arquivo de texto e utilizar 
 funções para cada funcionalidade.
 '''
+
+from lib.interface import menu
+
+opcao = menu.menu("Ver", "Cadastrar", "Sair")
+print(opcao)
