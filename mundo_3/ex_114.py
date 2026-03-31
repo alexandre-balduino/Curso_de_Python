@@ -8,16 +8,15 @@ pelo computador usado.
 
 import urllib.request
 
-url = 'http://www.pudim.com.br'
-
-headers = {
-    'User-Agent': 'Mozilla/5.0'
-}
-
-req = urllib.request.Request(url, headers=headers)
-
 try:
-    site = urllib.request.urlopen(req)
+    site = urllib.request.urlopen(
+        urllib.request.Request(
+            "http://www.pudim.com.br",
+            headers={
+                "User-Agent": "Mozilla/5.0"
+            }
+        )
+    )
 except Exception as e:
     print('Erro ao acessar:', e)
 else:
