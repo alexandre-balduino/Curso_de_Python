@@ -1,0 +1,4 @@
+Alexandre; 28
+Vivian; 22
+Estevão; 1
+Ester; 0
