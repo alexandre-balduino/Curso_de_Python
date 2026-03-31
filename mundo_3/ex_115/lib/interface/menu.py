@@ -1,15 +1,26 @@
 
-def menu(*opcoes):
-    for i, o in enumerate(opcoes):
+def linha(tam):
+    print("-" * tam)
+    
+    
+def cabecalho(titulo, tam=32):
+    linha(tam)
+    print(titulo.center(tam))
+    linha(tam)
+
+
+def menu(*opc):
+    cabecalho("MENU PRINCIPAL", 32)
+    for i, o in enumerate(opc):
         print(f"[{i:^3}] {o}")
-    print()
+    linha(32)
     while True:
         res = leiaInt("Digite o número da opção: ")
-        if 0 <= res < len(opcoes):
+        if 0 <= res <= len(opc)-1:
             break
         else:
-            print(f"Erro. Digite um número entre 0 e {len(opcoes) - 1}")
-    return opcoes[res]
+            print(f"Erro. Digite uma resposta válida")
+    return opc[res]
 
 
 def leiaInt(msg="Digite um número: "):
