@@ -180,7 +180,7 @@ while True:
 # 🔥 Resumo rápido
 
 | Função | Descrição |
-| :---: | :---: | :---: |
+| :--- | :---: | ---: |
 | os.getcwd() | Diretório atual |
 | os.chdir() | Mudar de pasta |
 | os.listdir() | Listar arquivos |
