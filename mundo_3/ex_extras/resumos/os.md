@@ -210,11 +210,19 @@ Agora você está pronto para:
 
 
 # 🔹 Resumo mental
+
 os.getcwd() → onde estou
+
 os.listdir() → o que tem aqui
+
 os.chdir() → ir para outro lugar
+
 os.path.exists() → existe?
+
 os.path.isfile() → é arquivo?
+
 os.path.isdir() → é pasta?
+
 os.path.join() → montar caminho
+
 os.path.splitext() → pegar extensão
