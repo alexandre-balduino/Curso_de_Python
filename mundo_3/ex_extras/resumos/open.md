@@ -217,4 +217,4 @@ except FileNotFoundError:
 
 * Sempre use `with open(...)`
 * Use `utf-8` para evitar problemas
-* Combine com os para automações
+* Combine com `os` para automações
