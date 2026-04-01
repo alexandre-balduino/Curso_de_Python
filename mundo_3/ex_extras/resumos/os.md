@@ -180,14 +180,24 @@ while True:
 # 🔥 Resumo rápido
 
 | Função | Descrição |
+
 | :--- | :---: | ---: |
+
 | os.getcwd() | Diretório atual |
+
 | os.chdir() | Mudar de pasta |
+
 | os.listdir() | Listar arquivos |
+
 | os.path.exists() | Verificar existência |
+
 | os.path.isfile() | Verificar se é arquivo |
+
+
 | os.path.isdir() | Verificar se é pasta |
+
 | os.path.join() | Montar caminhos |
+
 | os.path.splitext() | Separar extensão |
 
 # 💡 Dica final
