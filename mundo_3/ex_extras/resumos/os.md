@@ -19,6 +19,7 @@ A biblioteca `os` permite interagir com o sistema operacional, como:
 
 ```python
 import os
+```
 
 # 🔹 Conceito de caminhos (paths)
 
