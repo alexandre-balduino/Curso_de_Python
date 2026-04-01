@@ -207,11 +207,11 @@ except FileNotFoundError:
 
 # 🔥 Resumo rápido
 | Modo | Descrição |
-| :--- | :---: |
-| "r" | Ler |
-| "w" | Escrever (apaga) |
-| "a" | Adicionar |
-| "b" | Binário |
+| :--- | :--- |
+| `"r"` | Ler |
+| `"w"` | Escrever (apaga) |
+| `"a"` | Adicionar |
+| `"b"` | Binário |
 
 # 💡 Dica final
 
