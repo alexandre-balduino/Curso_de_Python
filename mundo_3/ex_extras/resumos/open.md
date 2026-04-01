@@ -137,6 +137,7 @@ with open("dados.txt", "r") as f:
 * Fecha automaticamente
 * Mais seguro
 * Padrão do mercado
+
 # 🔹 Cursor do arquivo
 
 O Python mantém um "cursor" que indica a posição de leitura.
@@ -156,6 +157,7 @@ Para evitar erros com acentos:
 with open("dados.txt", "r", encoding="utf-8") as f:
     print(f.read())
 ```
+
 👉 Use sempre utf-8 no Brasil
 
 # 🔹 Exemplos práticos
@@ -165,14 +167,16 @@ with open("dados.txt", "r", encoding="utf-8") as f:
 ```Python
 with open("log.txt", "a") as f:
     f.write("Programa iniciado\n")
+```
 
-```✔️ Processar linhas
+✔️ Processar linhas
 
 ```Python
 with open("nomes.txt", "r") as f:
     for linha in f:
         print(linha.strip())
 ```
+
 ✔️ Copiar arquivo
 
 ```Python
