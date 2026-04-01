@@ -207,7 +207,7 @@ except FileNotFoundError:
 
 # 🔥 Resumo rápido
 | Modo | Descrição |
-| :--- | ---: |
+| :--- | :---: |
 | "r" | Ler |
 | "w" | Escrever (apaga) |
 | "a" | Adicionar |
