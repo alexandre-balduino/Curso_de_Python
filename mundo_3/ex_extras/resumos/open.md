@@ -31,7 +31,7 @@ f = open("dados.txt", "r")
 
 # 🔹 Modos de abertura
 
-📖 "r" — leitura (read)
+### 📖 "r" — leitura (read)
 
 Abre o arquivo para leitura
 
@@ -41,7 +41,7 @@ Dá erro se o arquivo não existir
 open("dados.txt", "r")
 ```
 
-✍️ "w" — escrita (write)
+### ✍️ "w" — escrita (write)
 
 Cria o arquivo se não existir
 
@@ -51,7 +51,7 @@ Apaga todo o conteúdo existente ⚠️
 open("dados.txt", "w")
 ```
 
-➕ "a" — adicionar (append)
+### ➕ "a" — adicionar (append)
 
 Adiciona conteúdo ao final do arquivo
 
@@ -61,11 +61,11 @@ Não apaga o conteúdo existente
 open("dados.txt", "a")
 ```
 
-🔄 "r+" — leitura e escrita
+### 🔄 "r+" — leitura e escrita
 
 Permite ler e escrever no mesmo arquivo
 
-📦 "b" — modo binário
+### 📦 "b" — modo binário
 
 Usado para arquivos como:
 * imagens
