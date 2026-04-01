@@ -178,6 +178,7 @@ while True:
 ```
 
 # 🔥 Resumo rápido
+
 | Função | Descrição |
 | :---: | :---: | :---: |
 | os.getcwd() | Diretório atual |
