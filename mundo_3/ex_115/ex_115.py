@@ -13,8 +13,8 @@ em um arquivo de texto e utilizar
 funções para cada funcionalidade.
 '''
 
-from lib.interface.menu import menu, cabecalho
-from lib.arquivo.dado import arquivoExiste, criarArquivo, lerArquivo
+from lib.interface.menu import menu, cabecalho, leiaInt
+from lib.arquivo.dado import arquivoExiste, criarArquivo, lerArquivo, cadastrar
 from time import sleep
 from os import path, system
 
@@ -30,13 +30,14 @@ while True:
         "Sair do sistema"
     )
     if opcao == "Ver pessoas cadastradas":
-        cabecalho("PESSOAS CADASTRADAS")
         lerArquivo(arq)
         input("Digite 'Enter' para voltar")
         system("clear")
     elif opcao == "Cadastrar nova pessoa":
-        print(opcao)
-        sleep(0.5)
+        cabecalho("NOVO CADASTRO")
+        nome = str(input("Digite o nome: ")).strip().title()
+        idade = leiaInt("Digite a idade: ")
+        cadastrar(arq, nome, idade)
         system("clear")
     elif opcao == "Sair do sistema":
         print(opcao)
