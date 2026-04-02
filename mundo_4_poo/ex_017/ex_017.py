@@ -11,7 +11,7 @@ from rich import print
 from rich.panel import Panel
 
 class Produto:
-    def __init__(self, nome, preco):
+    def __init__(self, nome: str, preco: float):
         self.nome = nome
         self.preco = preco
     
@@ -20,11 +20,12 @@ class Produto:
         return f"{self.nome} custa R${self.preco:,.2f}"
     
     
-    def etiqueta(self):
-        conteudo = f"{self.nome.center(28, '-')}\n"
-        conteudo += f"{'-' * 28}\n"
+    def etiqueta(self) -> Panel:
+        larg = 28
+        conteudo = f"{self.nome.center(larg, '-')}\n"
+        conteudo += f"{'-' * larg}\n"
         precof = f"R${self.preco:,.2f}"
-        conteudo += f"{precof.center(28, '-')}"
+        conteudo += f"{precof.center(larg, '-')}"
         etiqueta = Panel(conteudo, title="Produto", width=32)
         return etiqueta
 
