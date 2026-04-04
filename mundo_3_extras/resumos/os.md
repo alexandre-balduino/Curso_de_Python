@@ -198,6 +198,7 @@ Saída:
 ```
 
 ✔ Remove o arquivo
+
 ✔ Fica só o diretório
 
 🔥 Uso muito comum
@@ -206,7 +207,7 @@ Saída:
 os.path.dirname(__file__)
 ```
 
-Isso retorna: 👉 * a pasta onde está o arquivo Python atual *
+👉 Isso retorna a pasta onde está o arquivo Python atual
 
 
 #🔹 Pegar apenas o arquivo
@@ -222,6 +223,7 @@ arquivo.txt
 ```
 
 ✔ Remove o caminho
+
 ✔ Fica só o arquivo
 
 
@@ -238,6 +240,7 @@ Saída (exemplo):
 ```
 
 ✔ Resolve caminho relativo
+
 ✔ Mostra o caminho real no sistema
 
 
