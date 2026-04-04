@@ -1,2 +1,53 @@
-# Curso de Python
-Exercícios do **curso de python** do Curso em Vídeo
+
+# 🐍 Curso de Python - Curso em Vídeo
+
+Este repositório contém os exercícios do curso de Python do professor Gustavo Guanabara.
+
+## 📌 Sobre
+
+Este material foi refeito com o objetivo de praticar e organizar os exercícios no GitHub.
+
+- Já havia feito o curso anteriormente
+- Refiz os exercícios para reforçar o aprendizado
+- Não assisti novamente todas as aulas recentemente, foquei mais na prática
+
+Por isso:
+
+> ⚠️ Algumas soluções podem estar diferentes das apresentadas pelo professor
+
+## 🎯 Objetivo
+
+- Praticar lógica de programação
+- Reforçar conceitos de Python
+- Criar consistência resolvendo exercícios
+- Montar um portfólio no GitHub
+
+## 🛠️ Observações
+
+- O foco foi **lógica e funcionamento**
+- Não houve preocupação com:
+  - Cores ANSI
+  - Estética no terminal
+- Algumas soluções podem estar mais diretas ou com abordagens próprias
+
+## 📂 Estrutura
+
+Os exercícios estão organizados por número:
+
+> `ex_001.py` `ex_002.py` `ex_003.py` ... `ex_115/`
+
+## 🚀 Tecnologias utilizadas
+
+- Python 3
+
+## 📚 Curso
+
+Curso de Python do canal Curso em Vídeo, ministrado pelo professor Gustavo Guanabara.
+
+## ✍️ Autor
+
+Alexandre Balduino Soares
+
+---
+
+📌 Este repositório faz parte da minha jornada de evolução em Python.
