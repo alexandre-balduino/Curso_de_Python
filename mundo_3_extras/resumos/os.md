@@ -262,13 +262,6 @@ Saída (exemplo):
 | `os.path.abspath()` | Caminho completo |
 
 
-# 💡 Dica final
-
-* Sempre use os.path.join() para evitar erros
-* Prefira caminhos relativos no início
-* Teste seus códigos em pastas reais
-
-
 # 🔹 Resumo mental
 
 `os.getcwd()` → onde estou
