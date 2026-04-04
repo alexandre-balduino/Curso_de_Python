@@ -9,12 +9,14 @@ import os
 
 os.chdir(os.path.dirname(__file__))
 print(os.getcwd())
-for dir in os.listdir():
-    if os.path.isfile(dir):
-        nome, extensao = os.path.splitext(dir)
-        #print(nome, extensao)
-        if extensao == ".jpg":
-            print(f"{dir} é uma foto")
-            print("deve ser renomeada")
-        elif extensao == ".py":
-            print(f"{dir} é codigo")
+
+contador = 1
+
+for nome_arquivo in sorted(os.listdir()):
+    if os.path.isfile(nome_arquivo):
+        nome, extensao = os.path.splitext(nome_arquivo)
+        if extensao.lower() == ".jpg":
+            novo_nome = f"foto_{contador}{extensao}"
+            print(f"{nome_arquivo} renomeado para {novo_nome}")
+            os.rename(nome_arquivo, novo_nome)
+            contador += 1
