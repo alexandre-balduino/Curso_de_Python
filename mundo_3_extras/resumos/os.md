@@ -201,7 +201,7 @@ Saída:
 
 ✔ Fica só o diretório
 
-🔥 Uso muito comum
+### 🔥 Uso muito comum
 
 ```Python
 os.path.dirname(__file__)
