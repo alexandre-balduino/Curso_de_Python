@@ -3,6 +3,7 @@
 
 Este repositório contém os exercícios do curso de Python do professor Gustavo Guanabara.
 
+
 ## 📌 Sobre
 
 Este material foi refeito com o objetivo de praticar e organizar os exercícios no GitHub.
@@ -15,12 +16,22 @@ Por isso:
 
 > ⚠️ Algumas soluções podem estar diferentes das apresentadas pelo professor
 
+
+## 📱 Ambiente de desenvolvimento
+
+Todo o curso foi feito utilizando apenas um **celular Android**, com:
+
+- Termux
+- PyCode
+
+
 ## 🎯 Objetivo
 
 - Praticar lógica de programação
 - Reforçar conceitos de Python
 - Criar consistência resolvendo exercícios
 - Montar um portfólio no GitHub
+
 
 ## 🛠️ Observações
 
@@ -30,19 +41,37 @@ Por isso:
   - Estética no terminal
 - Algumas soluções podem estar mais diretas ou com abordagens próprias
 
+
+## ➕ Exercícios extras
+
+Além dos exercícios do curso, também desenvolvi:
+
+- 📄 Leitor de `.txt`  
+  → Conta quantidade de linhas, palavras e letras
+
+- 📂 Navegador de arquivos simples  
+  → Permite navegar por diretórios via terminal
+
+- 🖼️ Renomeador de fotos  
+  → Renomeia arquivos automaticamente com base em um padrão
+
+
 ## 📂 Estrutura
 
 Os exercícios estão organizados por número:
 
 > `ex_001.py` `ex_002.py` `ex_003.py` ... `ex_115/`
 
+
 ## 🚀 Tecnologias utilizadas
 
 - Python 3
 
+
 ## 📚 Curso
 
 Curso de Python do canal Curso em Vídeo, ministrado pelo professor Gustavo Guanabara.
+
 
 ## ✍️ Autor
 
