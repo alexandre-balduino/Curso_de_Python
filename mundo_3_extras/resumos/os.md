@@ -1,5 +1,5 @@
 
-# 📂 Biblioteca `os` e `os.path` em Python
+# 📂 Biblioteca `os` em Python
 
 Guia prático para manipulação de arquivos e diretórios.
 
@@ -177,6 +177,70 @@ while True:
             print("Isso é um arquivo")
 ```
 
+
+# 🔹 Renomear ou mover um arquivo
+
+```Python
+os.rename("arquivo_antigo.txt", "arquivo_novo.txt")
+```
+
+
+# 🔹 Pegar apenas a pasta de um arquivo
+
+```Python
+os.path.dirname(caminho)
+```
+
+Saída:
+
+```
+/pasta/subpasta
+```
+
+✔ Remove o arquivo
+✔ Fica só o diretório
+
+🔥 Uso muito comum
+
+```Python
+os.path.dirname(__file__)
+```
+
+Isso retorna: 👉 * a pasta onde está o arquivo Python atual *
+
+
+#🔹 Pegar apenas o arquivo
+
+```Python
+print(os.path.basename(caminho))
+```
+
+Saída:
+
+```
+arquivo.txt
+```
+
+✔ Remove o caminho
+✔ Fica só o arquivo
+
+
+#🔹 Pegar o caminho absoluto
+
+```Python
+print(os.path.abspath(caminho))
+```
+
+Saída (exemplo):
+
+```
+/data/data/com.termux/files/home/pasta/subpasta/arquivo.txt
+```
+
+✔ Resolve caminho relativo
+✔ Mostra o caminho real no sistema
+
+
 # 🔥 Resumo rápido
 
 | Função | Descrição |
@@ -189,24 +253,17 @@ while True:
 | `os.path.isdir()` | Verificar se é pasta |
 | `os.path.join()` | Montar caminhos |
 | `os.path.splitext()` | Separar extensão |
+| `os.path.rename()` | Renomear ou mover um arquivo |
+| `os.path.dirname()` | Diretório |
+| `os.path.basename()` | Nome do arquivo |
+| `os.path.abspath()` | Caminho completo |
+
 
 # 💡 Dica final
 
 * Sempre use os.path.join() para evitar erros
 * Prefira caminhos relativos no início
 * Teste seus códigos em pastas reais
-
-# 🚀 Próximo passo
-
-Agora você está pronto para:
-
-* Contador de linhas e palavras
-* Renomeador de arquivos
-* Organizador automático de arquivos
-
-
-
-
 
 
 # 🔹 Resumo mental
@@ -226,3 +283,11 @@ Agora você está pronto para:
 `os.path.join()` → montar caminho
 
 `os.path.splitext()` → pegar extensão
+
+`os.rename()` → renomear ou mover
+
+`os.path.dirname()` → diretório
+
+`os.path.basename()` → nome do arquivo
+
+`os.path.abspath()` → caminho completo

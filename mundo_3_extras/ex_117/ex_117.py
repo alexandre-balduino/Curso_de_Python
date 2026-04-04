@@ -8,25 +8,27 @@ pasta ou arquivo
 '''
 
 import os
-def menu(pasta):
-    os.chdir(pasta)
-    print(os.getcwd())
-    pasta = []
-    for dir in os.listdir():
-        pasta.append(dir)
-    for i, p in enumerate(pasta):
-        print(f"[{i:^5}] {p}")
-    try:
-        num_pasta = int(input("Digite o número da pasta: "))
-    except (ValueError, TypeError):
-        print("Digite um valor válido.")
-    else:
-        if os.path.isdir(pasta[num_pasta]):
-            print(f"{pasta[num_pasta]} é uma pasta")
-            return pasta[num_pasta]
+
+while True:
+    print("\nDiretório atual:", os.getcwd())
+
+    arquivos = os.listdir()
+
+    for i, item in enumerate(arquivos):
+        print(f"[{i}] {item}")
+
+    escolha = input("Digite o número (ou 'sair', 'voltar'): ")
+
+    if escolha == "sair":
+        break
+        
+    elif escolha == "voltar":
+        os.chdir("..")
+        
+    elif escolha.isdigit():
+        item = arquivos[int(escolha)]
+
+        if os.path.isdir(item):
+            os.chdir(item)
         else:
-            print(f"{pasta[num_pasta]} não é uma pasta")
-
-
-base = os.getcwd()
-menu(base)
+            print("Isso é um arquivo")
