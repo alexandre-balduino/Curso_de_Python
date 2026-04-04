@@ -210,7 +210,7 @@ os.path.dirname(__file__)
 👉 Isso retorna a pasta onde está o arquivo Python atual
 
 
-#🔹 Pegar apenas o arquivo
+# 🔹 Pegar apenas o arquivo
 
 ```Python
 print(os.path.basename(caminho))
@@ -227,7 +227,7 @@ arquivo.txt
 ✔ Fica só o arquivo
 
 
-#🔹 Pegar o caminho absoluto
+# 🔹 Pegar o caminho absoluto
 
 ```Python
 print(os.path.abspath(caminho))
