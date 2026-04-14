@@ -11,7 +11,16 @@ from rich import print
 
 class Caneta:
     def __init__(self, cor):
-        self.cor = cor
+        match cor.strip().lower():
+            case "azul":
+                escolha = "[blue]"
+            case "vermelho" | "vermelha":
+                escolha = "[red]"
+            case "verde":
+                escolha = "[green]"
+            case _:
+                escolha = "[black]"
+        self.cor = escolha
         self.tampada = True
     
     
@@ -32,28 +41,14 @@ class Caneta:
     
     
     def escrever(self, conteudo):
-        cores = {
-            "azul": "blue",
-            "verde": "green",
-            "vermelha": "red",
-            "preta": "black on gray"
-        }
-        cor = cores.get(self.cor.lower(), "default")
-        if self.cor.lower() == "azul":
-            cor = "blue"
-        elif self.cor.lower() == "vermelha":
-            cor = "red"
-        elif self.cor.lower() == "verde":
-            cor = "green"
         if not self.tampada:
-            print(f"[{cor}]{conteudo}[/]", end="")
+            print(f"{self.cor}{conteudo}[/]", end="")
         else:
-            print(f"A caneta [{cor}]{self.cor}[/] está tampada", end="")
+            print(f"A {self.cor}caneta[/] está tampada", end="")
     
     
     def pular_linha(self, quantidade=1):
-        for q in range(quantidade):
-            print()
+        print("\n" * quantidade, end="")
 
 
 preta = Caneta("preta")

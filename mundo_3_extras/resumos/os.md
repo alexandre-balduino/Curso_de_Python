@@ -118,6 +118,23 @@ Diretório:
 os.path.dirname("/pasta/arquivo.txt")
 ```
 
+# 🔹 Dividir o caminho
+
+```Python
+caminho = "/home/usuario/documentos/projeto.txt"
+diretorio, arquivo = os.path.split(caminho)
+
+print(f"Diretório: {diretorio}")
+print(f"Arquivo: {arquivo}")
+```
+
+Resultado:
+
+```Bash
+Diretório: /home/usuario/documentos
+​Arquivo: projeto.txt
+```
+
 # 🔹 Trabalhar com extensão de arquivo
 
 ```Python
