@@ -64,7 +64,7 @@ Controle Genérico
 
 ### Classes Especializadas
 
-| `Aluno` | `Professor` | `Funcionario` |
+| **`Aluno`** | **`Professor`** | **`Funcionario`** |
 | :--- | :--- | :--- |
 | `curso` | `especialidade` | `cargo` |
 | `turma` | `nível` | `setor` |
@@ -80,8 +80,3 @@ Ao definir um conjunto de **métodos abstratos**, dizemos que estamos criando a 
 Uma **classe abstrata** pode ter **métodos abstratos** que deverão ser *obrigatóriamente*  implementados nas **subclasses**.
 
 Mas uma **classe abstrata** pode ter **métodos concretos** se eles funcionarem da mesma maneira para todas as **subclasses** (**DRY**).
-
----
-
-## Abstract Base Classes ABC
-

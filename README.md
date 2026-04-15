@@ -42,6 +42,16 @@ Todo o curso foi feito utilizando apenas um **celular Android**, com:
 - Algumas soluções podem estar mais diretas ou com abordagens próprias
 
 
+## 🧠 Progresso no curso
+
+O curso é dividido em mundos:
+
+- ✅ Mundo 1 — Fundamentos
+- ✅ Mundo 2 — Estruturas de controle
+- ✅ Mundo 3 — Estruturas compostas
+- 🚧 Mundo 4 — Programação Orientada a Objetos *(em andamento)*
+
+
 ## ➕ Exercícios extras
 
 Além dos exercícios do curso, também desenvolvi:
@@ -71,6 +81,8 @@ Os exercícios estão organizados por número:
 ## 📚 Curso
 
 Curso de Python do canal Curso em Vídeo, ministrado pelo professor Gustavo Guanabara.
+
+> 🆕 O curso está em atualização, incluindo o **Mundo 4 (POO)**.
 
 
 ## ✍️ Autor
