@@ -31,6 +31,6 @@
 
 ---
 
-#### Existe a **abstração de dados**, que acontece quando **ignoramos** *informações desnecessárias* para o escopo do projeto.
+Existe a **abstração de dados**, que acontece quando **ignoramos** *informações desnecessárias* para o escopo do projeto.
 
-#### Existe a **abstração de processos**, quando não precisamos saber *como um método faz* seu trabalho, apenas sabe que **ele existe** pela *interface*.
+Existe a **abstração de processos**, quando não precisamos saber *como um método faz* seu trabalho, apenas sabe que **ele existe** pela *interface*.
