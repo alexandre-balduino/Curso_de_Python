@@ -23,3 +23,18 @@ while cont <= num:
     termo1 = termo2
     termo2 = termo3
     cont += 1
+
+'''
+num = int(input("Digite um número: "))
+
+termo1 = 0
+termo2 = 1
+
+print(f'{termo1} -> {termo2}', end='')
+
+cont = 2
+while cont < num:
+    termo1, termo2 = termo2, termo1 + termo2
+    print(f" -> {termo2}", end="")
+    cont += 1
+    '''
