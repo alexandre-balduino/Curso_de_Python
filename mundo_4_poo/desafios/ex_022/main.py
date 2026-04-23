@@ -1,4 +1,5 @@
 
+import readchar
 from os import system
 from rich import print
 from ex_022 import ControleRemoto
@@ -7,8 +8,11 @@ def main():
     controle = ControleRemoto()
     
     while True:
-        print(controle.mostrar_tv())
-        comando = str(input(f"< CH{controle.canal_atual} >   - VOL{controle.canal_atual} + "))
+        print(
+            controle.mostrar_tv(), 
+            f"< CH{controle.canal_atual} >   - VOL{controle.canal_atual} + "
+        )
+        comando = readchar.readkey()
         match comando:
             case "0":
                 break

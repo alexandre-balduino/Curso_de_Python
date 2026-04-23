@@ -1,16 +1,27 @@
+'''
+Desafio 022
 
+Crie a classe ControleRemoto, onde
+vamos simular o funcionamento de um 
+controle simples com metodos:
+    liga_desliga()
+    volume_menos()
+    volume_mais()
+    canal_menos()
+    canal_mais()
+'''
 from rich.panel import Panel
 
 class ControleRemoto:
-    canal_min:int = 1
-    canal_max:int = 5
-    volume_min:int = 1
-    volume_max:int = 5
+    canal_min: int = 1
+    canal_max: int = 5
+    volume_min: int = 1
+    volume_max: int = 5
     
-    def __init__(self, canal=1, volume=3):
-        self.canal_atual:int = canal
-        self.volume_atual:int = volume
-        self.ligado:bool = False
+    def __init__(self, canal:int=1, volume:int=3):
+        self.canal_atual: int = canal
+        self.volume_atual: int = volume
+        self.ligado: bool = False
     
     def liga_desliga(self):
         self.ligado = not self.ligado
@@ -39,8 +50,8 @@ class ControleRemoto:
             if self.volume_atual != ControleRemoto.volume_min:
                 self.volume_atual -= 1
     
-    def mostrar_tv(self):
-        conteudo = ""
+    def mostrar_tv(self) -> Panel:
+        conteudo: str = ""
         
         if not self.ligado:
             conteudo = f":prohibited: [red]A TV está desligada[/]"

@@ -1,5 +1,5 @@
 
-from ex_023 import *
+from ex_023 import Quadrado, Circulo
 
 quad = Quadrado(5)
 print(f"O perímetro do quadrado é: {quad.perimetro()} \nA àrea é: {quad.area()}")
