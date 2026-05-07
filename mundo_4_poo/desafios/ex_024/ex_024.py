@@ -50,6 +50,34 @@ class BebidaQuente(ABC):
         pass
 
 
-#class Cafe(BebidaQuente)
-#class Cha(BebidaQuente)
-#class Leite(BebidaQuente)
+class Cafe(BebidaQuente):
+    def __init__(self):
+        super().__init__()
+    
+    def misturar(self):
+        pass
+    
+    def servir(self):
+        pass
+
+
+class Cha(BebidaQuente):
+    def __init__(self):
+        super().__init__()
+    
+    def misturar(self):
+        pass
+    
+    def servir(self):
+        pass
+
+
+class Leite(BebidaQuente):
+    def __init__(self):
+        super().__init__()
+    
+    def misturar(self):
+        pass
+    
+    def servir(self):
+        pass
