@@ -28,3 +28,28 @@ Simule uma cafeteira orientada a objetos
             | + servir()   |
             |--------------|
 '''
+
+from abc import ABC, abstractmethod
+
+class BebidaQuente(ABC):
+    def __init__(self):
+        pass
+    
+    def preparar(self):
+        print("preparando")
+    
+    def ferver_agua(self):
+        print("fervendo água")
+    
+    @abstractmethod
+    def misturar(self):
+        pass
+    
+    @abstractmethod
+    def servir(self):
+        pass
+
+
+#class Cafe(BebidaQuente)
+#class Cha(BebidaQuente)
+#class Leite(BebidaQuente)
