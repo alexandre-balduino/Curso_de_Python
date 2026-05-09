@@ -55,10 +55,10 @@ class Cafe(BebidaQuente):
         super().__init__()
     
     def misturar(self):
-        pass
+        print()
     
     def servir(self):
-        pass
+        print()
 
 
 class Cha(BebidaQuente):
@@ -66,10 +66,10 @@ class Cha(BebidaQuente):
         super().__init__()
     
     def misturar(self):
-        pass
+        print()
     
     def servir(self):
-        pass
+        print()
 
 
 class Leite(BebidaQuente):
@@ -77,7 +77,7 @@ class Leite(BebidaQuente):
         super().__init__()
     
     def misturar(self):
-        pass
+        print()
     
     def servir(self):
-        pass
+        print()
