@@ -32,14 +32,15 @@ Simule uma cafeteira orientada a objetos
 from abc import ABC, abstractmethod
 
 class BebidaQuente(ABC):
-    def __init__(self):
-        pass
-    
     def preparar(self):
-        print("preparando")
+        print("--- Iniciando o preparo ---")
+        self.ferver_agua()
+        self.misturar()
+        self.servir()
+        print("Bebida pronta.")
     
     def ferver_agua(self):
-        print("fervendo água")
+        print("Fervendo água.")
     
     @abstractmethod
     def misturar(self):
@@ -51,33 +52,24 @@ class BebidaQuente(ABC):
 
 
 class Cafe(BebidaQuente):
-    def __init__(self):
-        super().__init__()
-    
     def misturar(self):
-        print()
+        print("Passando a água no pó do café.")
     
     def servir(self):
-        print()
+        print("Servindo em uma xícara pequena.")
 
 
 class Cha(BebidaQuente):
-    def __init__(self):
-        super().__init__()
-    
     def misturar(self):
-        print()
+        print("Mergulhando o saquinho de chá na água.")
     
     def servir(self):
-        print()
+        print("Servindo na caneca de porcelanato.")
 
 
 class Leite(BebidaQuente):
-    def __init__(self):
-        super().__init__()
-    
     def misturar(self):
-        print()
+        print("Misturando o leite em pó na água.")
     
     def servir(self):
-        print()
+        print("Servindo na xícara grande.")

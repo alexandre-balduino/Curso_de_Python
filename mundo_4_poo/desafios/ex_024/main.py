@@ -1,7 +1,5 @@
 
 from ex_024 import *
 
-cafe = Cafe()
-
-cafe.preparar()
-cafe.ferver_agua()
+bebida = Cafe()
+bebida.preparar()
