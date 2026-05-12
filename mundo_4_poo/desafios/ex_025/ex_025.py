@@ -32,3 +32,38 @@ fretes de veículos diferentes.
             | + calc_frete() |
             |----------------|
 '''
+
+from abc import ABC, abstractmethod
+
+class Trabsporte(ABC):
+    def __init__(self, distancia, frete):
+        self.distancia = distancia
+        self.frete = frete
+    
+    @abstractmethod
+    def calc_frete(self):
+        pass
+
+
+class Moto(Trabsporte):
+    def __init__(self, fator=0.50):
+        self.fator = fator
+    
+    def calc_frete(self):
+        pass
+
+
+class Caminhao(Transporte):
+    def __init__(self, fator=1.20):
+        self.fator = fator
+    
+    def calc_frete(self):
+        pass
+
+
+class Drone(Transporte):
+    def __init__(self, fator):
+        self.fator = fator
+    
+    def calc_frete(self):
+        pass
