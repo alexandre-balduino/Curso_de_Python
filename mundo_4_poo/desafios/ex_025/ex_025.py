@@ -35,35 +35,47 @@ fretes de veículos diferentes.
 
 from abc import ABC, abstractmethod
 
-class Trabsporte(ABC):
-    def __init__(self, distancia, frete):
+class Transporte(ABC):
+    def __init__(self, distancia):
         self.distancia = distancia
-        self.frete = frete
+        self.frete = 0
     
     @abstractmethod
-    def calc_frete(self):
+    def calcular_frete(self):
         pass
 
 
-class Moto(Trabsporte):
-    def __init__(self, fator=0.50):
-        self.fator = fator
+class Moto(Transporte):
+    fator=0.50
+    def __init__(self, distancia):
+        super().__init__(distancia)
     
-    def calc_frete(self):
-        pass
+    def calcular_frete(self):
+        self.frete = self.distancia * Moto.fator
+        return f"R${self.frete:.2f}"
 
 
 class Caminhao(Transporte):
-    def __init__(self, fator=1.20):
-        self.fator = fator
+    fator=1.20
+    def __init__(self, distancia):
+        super().__init__(distancia)
     
-    def calc_frete(self, dist):
-        pass
+    def calcular_frete(self):
+        if self.distancia >= 50:
+            self.frete = self.distancia * Caminhao.fator
+            return f"R${self.frete:.2f}"
+        else:
+            return "Raio mínimo de 50km"
 
 
 class Drone(Transporte):
-    def __init__(self, fator):
-        self.fator = fator
+    fator=9.50
+    def __init__(self, distancia):
+        super().__init__(distancia)
     
-    def calc_frete(self, dist):
-        pass
+    def calcular_frete(self):
+        if self.distancia <= 10:
+            self.frete = self.distancia * Drone.fator
+            return f"R${self.frete:.2f}"
+        else:
+            return "Raio máximo de 10km"
