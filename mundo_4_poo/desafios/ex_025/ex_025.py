@@ -57,7 +57,7 @@ class Caminhao(Transporte):
     def __init__(self, fator=1.20):
         self.fator = fator
     
-    def calc_frete(self):
+    def calc_frete(self, dist):
         pass
 
 
@@ -65,5 +65,5 @@ class Drone(Transporte):
     def __init__(self, fator):
         self.fator = fator
     
-    def calc_frete(self):
+    def calc_frete(self, dist):
         pass
