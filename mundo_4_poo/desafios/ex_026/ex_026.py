@@ -49,14 +49,18 @@ class Funcionario(ABC):
 
 
 class Horista(Funcionario):
-    def __init__(self, valor_hora, horas_trab):
+    def __init__(self, valor_hora, horas_trab, nome, sal_bruto, sal_liquido, sal_minimo, inss):
+        super().__init__(nome, sal_bruto, sal_liquido, sal_minimo, inss)
         self.valor_hora = valor_hora
         self.horas_trab = horas_trab
     
-    def analisar_sal(self):
+    def calcular_sal(self):
         pass
 
 
 class Mensalista(Funcionario):
-    def analisar_sal(self):
+    def __init__(nome, sal_bruto, sal_liquido, sal_minimo, inss):
+        super().__init__(nome, sal_bruto, sal_liquido, sal_minimo, inss)
+    
+    def calcular_sal(self):
         pass
