@@ -33,10 +33,10 @@ salários de funciinários diferentes
 from abc import ABC, abstractmethod
 
 class Funcionario(ABC):
-    def __init__(self, nome, sal_bruto, sal_liquido, sal_minimo=1612, inss=7.5):
+    def __init__(self, nome, sal_minimo=1612, inss=7.5):
         self.nome = nome
-        self.sal_bruto = sal_bruto
-        self.sal_liquido = sal_liquido
+        self.sal_bruto = 0
+        self.sal_liquido = 0
         self.sal_minimo = sal_minimo
         self.inss = inss
     
@@ -45,12 +45,12 @@ class Funcionario(ABC):
         pass
     
     def analisar_sal(self):
-        pass
+        print(f"{self.nome} recebe {self.sal_liquido}")
 
 
 class Horista(Funcionario):
-    def __init__(self, nome, sal_bruto, sal_liquido, valor_hora, horas_trab):
-        super().__init__(nome, sal_bruto, sal_liquido)
+    def __init__(self, nome, valor_hora, horas_trab):
+        super().__init__(nome)
         self.valor_hora = valor_hora
         self.horas_trab = horas_trab
     
@@ -59,8 +59,9 @@ class Horista(Funcionario):
 
 
 class Mensalista(Funcionario):
-    def __init__(nome, sal_bruto, sal_liquido):
-        super().__init__(nome, sal_bruto, sal_liquido)
+    def __init__(self, nome, sal_bruto):
+        super().__init__(nome, sal_bruto)
     
     def calcular_sal(self):
-        pass
+        desc = self.sal_bruto * (self.inss / 100)
+        self.sal_liquido = self.sal_bruto - desc
