@@ -31,6 +31,7 @@ salários de funciinários diferentes
 '''
 
 from abc import ABC, abstractmethod
+from rich import print
 from rich.panel import Panel
 
 class Funcionario(ABC):
@@ -48,7 +49,9 @@ class Funcionario(ABC):
     
     def analisar_sal(self):
         quant = self.sal_liquido / Funcionario.sal_minimo
-        print(f"O salário de {self.nome} é R${self.sal_liquido:.2f} e corresponde a {quant:.1f} salários mínimos.")
+        msg = f"O salário de {self.nome} é R${self.sal_liquido:.2f} e corresponde a {quant:.1f} salários mínimos."
+        painel = Panel(msg, title="Análise de salário")
+        print(painel)
 
 
 class Horista(Funcionario):
@@ -63,8 +66,9 @@ class Horista(Funcionario):
 
 
 class Mensalista(Funcionario):
-    def __init__(self, nome, sal_bruto):
-        super().__init__(nome, sal_bruto)
+    def __init__(self, nome, sal_bruto=Funcionario.sal_minimo):
+        super().__init__(nome)
+        self.sal_bruto = sal_bruto
     
     def calcular_sal(self):
         self.sal_liquido = self.sal_bruto - (self.sal_bruto * Funcionario.desc_inss / 100)
