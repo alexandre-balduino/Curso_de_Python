@@ -25,3 +25,7 @@ personagens de um RPG
 | + curar()   |   | + curar() |
 |-------------|   |-----------|
 '''
+
+from abs import ABS, abstractmethod
+
+class Personagem(ABS)
