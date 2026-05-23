@@ -28,4 +28,18 @@ personagens de um RPG
 
 from abs import ABS, abstractmethod
 
-class Personagem(ABS)
+class Personagem(ABS):
+    def __init__(self, nome):
+        self.nome = nome
+        self.vida = 100
+        self.golpes = []
+    
+    def atacar(self):
+        pass
+    
+    def receber_dano(self):
+        pass
+    
+    @abstractmethod
+    def curar(self):
+        pass,

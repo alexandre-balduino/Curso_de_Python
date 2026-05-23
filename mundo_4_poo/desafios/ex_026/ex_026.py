@@ -49,7 +49,7 @@ class Funcionario(ABC):
     
     def analisar_sal(self):
         quant = self.sal_liquido / Funcionario.sal_minimo
-        msg = f"O salário de {self.nome} é R${self.sal_liquido:.2f} e corresponde a {quant:.1f} salários mínimos."
+        msg = f"O salário de {self.nome} ({self.__class__.__name__}) é R${self.sal_liquido:.2f} e corresponde a {quant:.1f} salários mínimos."
         painel = Panel(msg, title="Análise de salário")
         print(painel)
 
