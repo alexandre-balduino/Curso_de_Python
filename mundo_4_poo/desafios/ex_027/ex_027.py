@@ -26,9 +26,9 @@ personagens de um RPG
 |-------------|   |-----------|
 '''
 
-from abs import ABS, abstractmethod
+from abc import ABC, abstractmethod
 
-class Personagem(ABS):
+class Personagem(ABC):
     def __init__(self, nome):
         self.nome = nome
         self.vida = 100
@@ -42,4 +42,4 @@ class Personagem(ABS):
     
     @abstractmethod
     def curar(self):
-        pass,
+        pass
