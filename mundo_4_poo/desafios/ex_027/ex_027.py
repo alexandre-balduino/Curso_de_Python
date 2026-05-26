@@ -30,16 +30,26 @@ from abc import ABC, abstractmethod
 
 class Personagem(ABC):
     def __init__(self, nome):
-        self.nome = nome
-        self.vida = 100
-        self.golpes = []
+        self.nome = None
+        self.vida = None
+        self.golpes = None
     
-    def atacar(self):
+    def atacar(self, alvo, forca):
         pass
     
-    def receber_dano(self):
+    def receber_dano(self, dano):
         pass
     
     @abstractmethod
+    def curar(self):
+        pass
+
+
+class Guerreiro(Personagem):
+    def curar(self):
+        pass
+
+
+class Mago(Personagem):
     def curar(self):
         pass
