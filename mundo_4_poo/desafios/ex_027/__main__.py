@@ -11,7 +11,7 @@ def main():
     p1.curar()
     p2.curar()
     p2.atacar(p1)
-    p1.atacar(p1l)
+    p1.atacar(p2)
 
 if __name__ == "__main__":
     main()
