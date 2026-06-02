@@ -40,16 +40,19 @@ class Personagem(ABC):
         return self.vida_atual >= 0
     
     def atacar(self, alvo, forca=100):
-        if alvo.esta_vivo():
-            print(f"{self.nome} atacou {alvo.nome} com {choice(self.golpes)} de força {forca}")
+        if self.esta_vivo() and alvo.esta_vivo():
+            golpe = choice(self.golpes)
+            print(f"{self.nome} atacou {alvo.nome} com {golpe} de força {forca}")
             alvo.receber_dano(forca)
         else:
-            print(f"{alvo.nome} já morreu")
+            print(f"O ataque {self.nome} -> {alvo.nome} não pode acontecer")
     
     def receber_dano(self, dano):
         dano_recebido = randint(dano//2, dano)
         self.vida_atual -= dano_recebido
-        print(f"{self.nome} recebeu {dano_recebido} pontos de dano")
+        if self.vida_atual < 0:
+            self.vida_atual = 0
+        print(f"{self.nome} recebeu {dano_recebido}")
     
     @abstractmethod
     def curar(self):
@@ -57,9 +60,9 @@ class Personagem(ABC):
 
 
 class Guerreiro(Personagem):
-    def __init__(self, nome, vida):
+    def __init__(self, nome, vida=1000):
         super().__init__(nome, vida)
-        self.golpes.extend(["golpe de machado", "voadora", "direto"])
+        self.golpes = ["golpe de machado", "voadora", "direto"]
     
     def curar(self):
         if self.esta_vivo():
@@ -71,9 +74,9 @@ class Guerreiro(Personagem):
 
 
 class Mago(Personagem):
-    def __init__(self, nome, vida):
+    def __init__(self, nome, vida=1000):
         super().__init__(nome, vida)
-        self.golpes.extend(["bola de fogo", "feitiço de dor crônica"])
+        self.golpes = ["bola de fogo", "raio de luz", "magia estática"]
     
     def curar(self):
         if self.esta_vivo():
