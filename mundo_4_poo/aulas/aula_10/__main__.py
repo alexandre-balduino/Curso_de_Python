@@ -1,4 +1,5 @@
 
+from rich import print
 from ex_008 import ContaBancaria
 
 def main():
