@@ -16,4 +16,4 @@ print(f"\n2. Produtos estão com menos de 5 unidades no estoque: \n\n{df[df['Est
 
 print(f"\n3. Tabela ordenada do produto mais caro ao mais barato: \n\n{df.sort_values('Preço', ascending=False)}")
 
-print(f"\n4. Nome e Preço do produto da linha 4: \n\n{df.loc[4, ['Produto', 'Preço']]}")
+print(f"\n4. Nome e Preço do produto da linha 4: \n\n{df.loc[4, ['Produto', 'Preço']]}
