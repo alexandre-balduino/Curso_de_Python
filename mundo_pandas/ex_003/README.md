@@ -1,12 +1,10 @@
 # Desafio 003
 
----
-
 Sua missão neste desafio é pegar a nossa mesma tabela de informática e resolver 3 problemas práticos de alteração e resumo de dados.
 
 ---
 
-Suas Tarefas:
+### Suas Tarefas:
 
 ​- **Correção de Dados** (O "UPDATE" do Pandas): O estagiário cadastrou a categoria da Impressora HP como 'Printers' (em inglês). Modifique esse valor específico para ficar em português: 'Periféricos'.
 ​
@@ -16,7 +14,7 @@ Suas Tarefas:
 ​
 ---
 
-O Código Inicial:
+### O Código Inicial:
 
 ```python
 dados_informatica = {
