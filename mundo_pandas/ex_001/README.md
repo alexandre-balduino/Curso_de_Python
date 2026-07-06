@@ -6,6 +6,7 @@ Imagine que você recebeu um relatório bruto de vendas de uma pequena loja de e
 ​
 Escreva um programa em Python que pegue o dicionário abaixo, transforme-o em um **DataFrame** do Pandas e faça as seguintes tarefas:
 
+
 Mostre a tabela completa na tela de forma organizada.
 ​
 Exiba apenas as 2 primeiras linhas do DataFrame para uma checagem rápida.
