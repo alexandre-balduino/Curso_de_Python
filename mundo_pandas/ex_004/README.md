@@ -4,7 +4,7 @@
 
 Você recebeu uma planilha de cadastro de clientes de uma plataforma online. Porém, a tabela está cheia de informações faltando (None ou NaN). O seu chefe quer que você limpe esses dados seguindo regras de negócio específicas e, no final, salve o resultado limpo em um arquivo CSV.
 ​
-Suas Tarefas:
+### Suas Tarefas:
 
 ​- **Identificar o problema**: Mostre na tela quantos dados nulos/faltantes existem em cada coluna da tabela.
 > (Dica: Use df.isnull().sum()).
