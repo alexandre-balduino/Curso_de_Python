@@ -14,7 +14,7 @@ Você recebeu uma planilha de cadastro de clientes de uma plataforma online. Por
 > (Dica: Você pode calcular a média com `df['Idade'].mean()` e depois usar o fillna nessa coluna).
 ​
 - **Remover Linhas Críticas**: Clientes que não informaram o E-mail não servem para a campanha de marketing. Delete as linhas onde o e-mail esteja nulo.
-> (Dica: Para apagar linhas com valores nulos baseando-se em uma coluna, usamos: |df.dropna(subset=['Coluna'], inplace=True)`).
+> (Dica: Para apagar linhas com valores nulos baseando-se em uma coluna, usamos: `df.dropna(subset=['Coluna'], inplace=True)`).
 ​
 - **Exportar**: Salve o seu DataFrame final, totalmente limpo e corrigido, em um arquivo chamado clientes_limpos.csv.
 > (Dica: Use `df.to_csv('nome_do_arquivo.csv', index=False)` para salvar sem exportar a coluna de índices numéricos).
