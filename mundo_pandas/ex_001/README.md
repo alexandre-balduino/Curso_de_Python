@@ -4,6 +4,7 @@
 
 Imagine que você recebeu um relatório bruto de vendas de uma pequena loja de eletrônicos em formato de dicionário Python. O seu chefe quer que você use o **Pandas** para organizar esses dados e extrair algumas informações cruciais.
 ​Escreva um programa em Python que pegue o dicionário abaixo, transforme-o em um **DataFrame** do Pandas e faça as seguintes tarefas:
+
 1.​Mostre a tabela completa na tela de forma organizada.
 ​2. Exiba apenas as 2 primeiras linhas do DataFrame para uma checagem rápida.
 ​3. Mostre a estrutura dos dados (quantas linhas, colunas e os tipos de dados que estão ali dentro).

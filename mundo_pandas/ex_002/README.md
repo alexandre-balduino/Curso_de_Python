@@ -18,6 +18,7 @@ dados_informatica = {
 ```
 
 Suas Tarefas:
+
 ​1. **Filtro de Categoria**: Exiba na tela apenas os produtos que pertencem à categoria 'Periféricos'.
 ​2. **Alerta de Estoque Baixo**: O gerente precisa saber quais produtos estão com menos de 5 unidades no estoque. Filtre e mostre apenas essas linhas.
 ​3. **Ordenação de Preços**: Mostre a tabela completa, mas ordenada do produto mais caro para o mais barato (Preço decrescente).
