@@ -9,8 +9,10 @@ Sua missão neste desafio é pegar a nossa mesma tabela de informática e resolv
 Suas Tarefas:
 
 ​1. **Correção de Dados** (O "UPDATE" do Pandas): O estagiário cadastrou a categoria da Impressora HP como 'Printers' (em inglês). Modifique esse valor específico para ficar em português: 'Periféricos'.
-​2. **A Inflação Chegou** (Operação em Massa): Devido às taxas de importação, todos os produtos da loja sofreram um aumento de 10% no preço. Atualize a coluna 'Preço' refletindo esse novo valor para todos os produtos de uma só vez (sem usar for!).
-​3. **Resumo por Categoria** (O "GROUP BY" do Pandas): O gerente quer saber quantos produtos a loja tem no estoque total somando por cada Categoria. Agrupe os dados e mostre essa soma.
+​
+2. **A Inflação Chegou** (Operação em Massa): Devido às taxas de importação, todos os produtos da loja sofreram um aumento de 10% no preço. Atualize a coluna 'Preço' refletindo esse novo valor para todos os produtos de uma só vez (sem usar for!).
+​
+3. **Resumo por Categoria** (O "GROUP BY" do Pandas): O gerente quer saber quantos produtos a loja tem no estoque total somando por cada Categoria. Agrupe os dados e mostre essa soma.
 ​
 ---
 

@@ -7,14 +7,23 @@ Você recebeu uma planilha de cadastro de clientes de uma plataforma online. Por
 Suas Tarefas:
 
 ​1. **Identificar o problema**: Mostre na tela quantos dados nulos/faltantes existem em cada coluna da tabela.
+
 (Dica: Use df.isnull().sum()).
-​2. **Tratar os nomes**: Quem não preencheu o nome deve receber o texto "Não Informado".
+​
+2. **Tratar os nomes**: Quem não preencheu o nome deve receber o texto "Não Informado".
+
 (Dica: Para preencher dados nulos em uma coluna específica, usamos: df['Coluna'] = df['Coluna'].fillna('Valor')).
-​3. **Tratar as idades**: Quem não preencheu a idade deve receber a média de idade dos outros clientes da tabela.
+​
+3. **Tratar as idades**: Quem não preencheu a idade deve receber a média de idade dos outros clientes da tabela.
+
 (Dica: Você pode calcular a média com df['Idade'].mean() e depois usar o fillna nessa coluna).
-​4. **Remover Linhas Críticas**: Clientes que não informaram o E-mail não servem para a campanha de marketing. Delete as linhas onde o e-mail esteja nulo.
+​
+4. **Remover Linhas Críticas**: Clientes que não informaram o E-mail não servem para a campanha de marketing. Delete as linhas onde o e-mail esteja nulo.
+
 (Dica: Para apagar linhas com valores nulos baseando-se em uma coluna, usamos: df.dropna(subset=['Coluna'], inplace=True)).
-​5. **Exportar**: Salve o seu DataFrame final, totalmente limpo e corrigido, em um arquivo chamado clientes_limpos.csv.
+​
+5. **Exportar**: Salve o seu DataFrame final, totalmente limpo e corrigido, em um arquivo chamado clientes_limpos.csv.
+
 (Dica: Use df.to_csv('nome_do_arquivo.csv', index=False) para salvar sem exportar a coluna de índices numéricos).
 ​
 ---
@@ -40,4 +49,3 @@ print("--- DATAFRAME ORIGINAL ---")
 print(df)
 print("-" * 26)
 ```
-
