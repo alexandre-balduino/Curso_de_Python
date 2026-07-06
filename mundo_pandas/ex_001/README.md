@@ -1,7 +1,5 @@
 # Desafio 001
 
----
-
 Imagine que você recebeu um relatório bruto de vendas de uma pequena loja de eletrônicos em formato de dicionário Python. O seu chefe quer que você use o **Pandas** para organizar esses dados e extrair algumas informações cruciais.
 ​
 Escreva um programa em Python que pegue o dicionário abaixo, transforme-o em um **DataFrame** do Pandas e faça as seguintes tarefas:
@@ -18,7 +16,7 @@ Escreva um programa em Python que pegue o dicionário abaixo, transforme-o em um
 ​
 ---
 
- Dados Iniciais para colocar no seu código:
+### Dados Iniciais para colocar no seu código:
 
 ```python
 dados_loja = {
