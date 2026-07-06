@@ -6,16 +6,15 @@ Imagine que você recebeu um relatório bruto de vendas de uma pequena loja de e
 ​
 Escreva um programa em Python que pegue o dicionário abaixo, transforme-o em um **DataFrame** do Pandas e faça as seguintes tarefas:
 
-
-Mostre a tabela completa na tela de forma organizada.
+- Mostre a tabela completa na tela de forma organizada.
 ​
-Exiba apenas as 2 primeiras linhas do DataFrame para uma checagem rápida.
+- Exiba apenas as 2 primeiras linhas do DataFrame para uma checagem rápida.
 ​
-Mostre a estrutura dos dados (quantas linhas, colunas e os tipos de dados que estão ali dentro).
+- Mostre a estrutura dos dados (quantas linhas, colunas e os tipos de dados que estão ali dentro).
 ​
-Adicione uma nova linha no final com o produto "Gabinete Gamer" que custa 450.00 e tem 8 unidades no estoque.
+- Adicione uma nova linha no final com o produto "Gabinete Gamer" que custa 450.00 e tem 8 unidades no estoque.
 ​
-Calcule e mostre na tela o valor total do estoque da loja (Dica: você precisará multiplicar a coluna de preço pela de estoque e somar tudo).
+- Calcule e mostre na tela o valor total do estoque da loja (Dica: você precisará multiplicar a coluna de preço pela de estoque e somar tudo).
 ​
 ---
 
