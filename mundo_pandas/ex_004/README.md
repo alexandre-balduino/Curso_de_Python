@@ -21,7 +21,7 @@ Você recebeu uma planilha de cadastro de clientes de uma plataforma online. Por
 ​
 ---
 
-O Código Inicial (com os dados "sujos"):
+### O Código Inicial (com os dados "sujos"):
 
 Como o Pandas usa a biblioteca numpy para representar valores nulos numéricos (NaN), vamos importar o numpy apenas para gerar a tabela inicial:
 
