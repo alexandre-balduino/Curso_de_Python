@@ -25,7 +25,6 @@ dados_vendas = {
     'Preço': [4000.00, 150.00, 250.00, 1200.00, 4000.00, 250.00],
     'Quantidade': [1, 2, 3, 1, 1, 5]
 }
-df_vendas = pd.DataFrame(dados_vendas)
 
 # Tabela B: Cadastro de Clientes
 dados_cadastro = {
@@ -33,5 +32,4 @@ dados_cadastro = {
     'Nome_Cliente': ['Alexandre', 'Vivian', 'Estevão', 'Ester'],
     'Região': ['Sul', 'Sul', 'Sudeste', 'Nordeste']
 }
-df_cadastro = pd.DataFrame(dados_cadastro)
 ```
