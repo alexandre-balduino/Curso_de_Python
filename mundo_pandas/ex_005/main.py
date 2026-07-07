@@ -17,8 +17,15 @@ dados_cadastro = {
 }
 df_cadastro = pd.DataFrame(dados_cadastro)
 
-print("--- TABELA DE VENDAS ---")
-print(df_vendas)
-print("\n--- TABELA DE CLIENTES ---")
-print(df_cadastro)
-print("-" * 30)
+print(f"\nTabela de vendas: \n{df_vendas}")
+print(f"\nTabela de Cadastro: \n{df_cadastro}")
+
+df_final = pd.merge(df_vendas, df_cadastro, on="ID_Cliente", how="inner")
+print(f"\n1. Juntando os dois DataFrames: \n{df_final}")
+
+df_final["Faturamento"] = df_final["Preço"] * df_final["Quantidade"]
+print(f"\n2. Calculando faturamento: \n{df_final}")
+
+print(f"\n3. Faturamento por região: \n{df_final.groupby('Região')['Faturamento'].sum()}")
+
+print(f"\n4. Faturamento maior que R$1000,00: \n{df_final[df_final['Faturamento'] > 1000]}")

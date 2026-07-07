@@ -1,7 +1,5 @@
 # Desafio 005
 
----
-
 Você recebeu dois relatórios separados do sistema da empresa. O primeiro relatório contém as Vendas do mês, mas possui apenas o ID_Cliente. O segundo relatório é o Cadastro de Clientes, que liga o ID_Cliente ao Nome e à Região dele.
 ​
 Seu objetivo é cruzar essas duas tabelas para gerar um relatório unificado e responder a algumas perguntas da diretoria.
