@@ -10,7 +10,7 @@ Escreva um programa em Python que pegue o dicionário abaixo, transforme-o em um
 ​
 - Mostre a estrutura dos dados (quantas linhas, colunas e os tipos de dados que estão ali dentro).
 ​
-- Adicione uma nova linha no final com o produto "Gabinete Gamer" que custa 450.00 e tem 8 unidades no noestoque.
+- Adicione uma nova linha no final com o produto "Gabinete Gamer" que custa 450.00 e tem 8 unidades no estoque.
 ​
 - Calcule e mostre na tela o valor total do estoque da loja (Dica: você precisará multiplicar a coluna de preço pela de estoque e somar tudo).
 ​

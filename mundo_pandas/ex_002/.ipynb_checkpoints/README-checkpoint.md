@@ -1,7 +1,7 @@
 # Desafio 002
 
 Você recebeu uma tabela maior com o estoque de uma loja de informática. Seu objetivo é criar um programa em Python que carregue esses dados em um DataFrame e resolva 4 problemas de negócio usando filtros, ordenação e o acesso a linhas específicas que acabamos de aprender.
-
+​
 ---
 
 ### Dados Iniciais para o seu código:
