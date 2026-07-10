@@ -12,7 +12,7 @@ df = pd.DataFrame(dados_atendimentos)
 print(df)
 
 print("\n1. Padronizando os nomes da coluna 'Agravo/Doença':\n")
-df["Agravo/Doença"] = df["Agravo/Doença"].apply(lambda x: x.title())
+df["Agravo/Doença"] = df["Agravo/Doença"].str.strip().str.upper()
 print(df["Agravo/Doença"])
 
 print("\n2. Criando DataFrame 'matriz_atendimentos':\n")

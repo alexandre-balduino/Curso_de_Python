@@ -2,12 +2,9 @@
 import pandas as pd
 import sqlite3
 
-# --- PREPARAÇÃO DO BANCO DE DADOS SIMULADO (Não mexa aqui) ---
-# Cria um banco de dados temporário na memória do celular
 conexao = sqlite3.connect(":memory:")
 cursor = conexao.cursor()
 
-# Cria a tabela estilo banco de dados relacional
 cursor.execute(
     """
     CREATE TABLE visitas (
@@ -20,7 +17,6 @@ cursor.execute(
     """
 )
 
-# Insere dados de exemplo no banco
 dados = [
     (1, "Dona Maria", 65, "Hipertensão", 25),
     (2, "Seu José", 72, "Diabetes", 40),

@@ -11,11 +11,11 @@ import pandas as pd
 import sqlite3
 
 # Cria um banco de dados temporário na memória do celular
-conexao = sqlite3.connect(':memory:')
+conexao = sqlite3.connect(":memory:")
 cursor = conexao.cursor()
 
 # Cria a tabela estilo banco de dados relacional
-cursor.execute('''
+cursor.execute("""
     CREATE TABLE visitas (
         id INTEGER PRIMARY KEY,
         Paciente TEXT,
@@ -23,20 +23,22 @@ cursor.execute('''
         Agravo TEXT,
         Tempo_Minutos INTEGER
     )
-''')
+""")
 
 # Insere dados de exemplo no banco
-dados_exemplo = [
-    (1, 'Dona Maria', 65, 'Hipertensão', 25),
-    (2, 'Seu José', 72, 'Diabetes', 40),
-    (3, 'Ana Júlia', 12, 'Asma', 15),
-    (4, 'Carlos Silva', 58, 'Hipertensão', 20),
-    (5, 'Dona Francisca', 48, 'Hipertensão', 30),
-    (6, 'Seu Antônio', 80, 'Diabetes', 50)
+dados = [
+    (1, "Dona Maria", 65, "Hipertensão", 25),
+    (2, "Seu José", 72, "Diabetes", 40),
+    (3, "Ana Júlia", 12, "Asma", 15),
+    (4, "Carlos Silva", 58, "Hipertensão", 20),
+    (5, "Dona Francisca", 48, "Hipertensão", 30),
+    (6, "Seu Antônio", 80, "Diabetes", 50)
 ]
-cursor.executemany('INSERT INTO visitas VALUES (?, ?, ?, ?, ?)', dados_exemplo)
+cursor.executemany(
+	"INSERT INTO visitas VALUES (?, ?, ?, ?, ?)",
+	dados
+)
 conexao.commit()
-print("-> Banco de dados simulado criado com sucesso! \n")
 
 conexao.close()
 ```
